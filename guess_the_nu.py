@@ -22,7 +22,7 @@ def main_guess():
             ls[b] = number
             ls[c] = no2
 
-            print("\n(Note: You can exit bye typing N/n instead of number.)\n")
+            print("\nNOTE:\nYour PC will generate a random number, you have to guess the correct number.\nYou can exit bye typing N/n instead of a number.\n")
             print("  GUESS THE NUMBER\n")
 
             print(f"{'No.1':>0}| {'No.2':^7}|{'No.3':>4}\n----|--------|------")
@@ -32,7 +32,7 @@ def main_guess():
 
             try:
                 if guess == 'N' or guess == 'n':
-                    print("\nGAME OVER!")
+                    print("\nYou left the Game!")
                     break
                 elif int(guess) == int(number):
                     print(
